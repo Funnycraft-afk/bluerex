@@ -1,0 +1,1016 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+    /* color: #1d1d1d; */
+    color: #484848;
+    font-weight: 600;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 400;
+}
+
+
+/* элемент span над заголовками в разных секциях */
+.slogan {
+    font-style: italic;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 400;
+
+}
+
+/* кнопка READ MORE */
+.read-more-btn {
+    border-radius: 10px;
+    padding: 12px 25px;
+    box-shadow: 0 10px 0 #ff5990;
+    background-color: #f42267;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.read-more-btn:hover {
+    color: #fff;
+    box-shadow: 0 5px 0 #ff5990;
+    background-color: #b30e45;
+
+}
+
+/* Кнопка для формы */
+.submit-btn {
+    border-radius: 10px;
+    padding: 12px 25px;
+    box-shadow: 0 7px 0 #a57ee9;
+    background-color: #4b2d7f;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+
+}
+
+.submit-btn:hover {
+    color: #fff;
+    box-shadow: 0 5px 0 #a57ee9;
+    background-color: #3e1e75;
+}
+
+
+/* Кнопка вверх */
+
+.scrollToTop {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    border-radius: 4px;
+    display: none;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    z-index: 11;
+    color: #fff;
+    transition: all .5s;
+    border: 0;
+    cursor: pointer;
+    background-color: rgba(218, 23, 87, .7);
+}
+
+.scrollToTop:hover {
+    background-color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+    outline: none;
+    border: 1px solid #da1757;
+    color: #da1757;
+}
+
+/* added for WP theme */
+/* .navbar-nav a {
+    margin-left: 20px;
+    color: #fff;
+} */
+
+
+/* *************** HEADER ********************************************* */
+.main-header {
+    background: url(../img/header-bg.png) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    color: #fff;
+}
+
+.main-header .navbar {
+    margin: 0 2%;
+    padding-top: 15px;
+}
+
+.main-header .navbar-toggler {
+    color: #fff;
+
+}
+
+.main-header .navbar-brand {
+    color: #fff;
+    font-size: 42px;
+}
+
+.main-header .nav-link {
+    color: #fff;
+    font-size: 17px;
+    margin-left: 20px;
+
+}
+
+/* .main-header .nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+} 
+
+.main-header .nav-link:hover::after {
+    transform: scale(1);
+    transition: all .3s;
+} */
+
+.main-header .nav-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Текст по центру */
+
+.main-header-text {
+    position: absolute;
+    left: 12%;
+    top: 22%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.main-header-text .slogan {
+    font-size: 43px;
+}
+
+.main-header-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.main-header-text p {
+    font-size: 23px;
+    max-width: 670px;
+}
+
+
+.main-header-buttons {
+    padding-left: 40px;
+    margin-top: 55px;
+}
+
+.main-header-buttons .btn {
+    width: 198px;
+    height: 60px;
+    box-shadow: 1px 4px 16px rgba(1, 2, 2, 0.35);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.btn-pink {
+    background-color: rgb(244, 34, 103);
+}
+
+.btn-pink:hover {
+    background-color: rgba(244, 34, 103, 0.7);
+}
+
+.btn-purple {
+    background-color: rgb(95, 63, 184);
+}
+
+.btn-purple:hover {
+    background-color: rgba(95, 63, 184, 0.7);
+}
+
+/* ****************************** SECTION WATCH ************************** */
+
+.section-watch {
+    background-image: url(../img/world-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.section-watch .slogan {
+    font-size: 33px;
+}
+
+.section-watch .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #484848;
+
+}
+
+.section-watch .nav-link.active,
+.section-work .nav-link.active {
+    color: #fff;
+    background-color: #f42267;
+    box-shadow: 1px 4px 16px rgba(1, 2, 2, 0.35);
+
+}
+
+.section-watch .tab-content p,
+.section-work .tab-content p {
+    margin-top: 25px;
+}
+
+/* ************************ SECTION PROGRESS ************************ */
+
+.section-progress {
+    background-color: #4b2d7f;
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+}
+
+.progress-item {
+    padding: 80px 10px;
+    transition: all .5s;
+}
+
+.progress-item i {
+    font-size: 70px;
+}
+
+.progress-item .num {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 35px 0 20px 0;
+}
+
+.progress-item h3 {
+    font-size: 25px;
+    height: 72px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+h3 span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.progress-item p {
+    max-width: 315px;
+    margin: 0 auto;
+}
+
+.progress-item:hover {
+    background-color: #281d3c;
+}
+
+/* *********************** SECTION LETS ****************** */
+
+.section-lets {
+    color: #fff;
+    background-image: url(../img/lets-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-lets .slogan {
+    font-size: 48px;
+}
+
+.section-lets p {
+    font-size: 20px;
+    max-width: 930px;
+    margin: 0 auto 30px auto;
+}
+
+
+
+
+/* *********************** SECTION DESIGN ****************** */
+
+.section-design .slogan {
+    font-size: 33px;
+}
+
+.section-design p {
+    font-size: 14px;
+    /* margin-bottom: 30px; */
+}
+
+.section-design h2+p {
+    font-size: 18px;
+    /* margin-bottom: 30px; */
+}
+
+.section-design i {
+    font-size: 60px;
+    padding-left: 15px;
+    background-image: linear-gradient(45deg, #dd164c 0%, #5d0aa8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-design h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.section-design .col-md-6 {
+    /* margin-bottom: 30px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.embed-responsive {
+    position: relative;
+    border-radius: 10px;
+}
+
+.play-btn {
+    width: 96px;
+    height: 96px;
+    z-index: 10;
+    position: absolute;
+    top: calc(50% - 48px);
+    left: calc(50% - 48px);
+    cursor: pointer;
+    background: url(../img/play.png.png) center no-repeat;
+}
+
+
+/* *********************** SECTION WORK *********************** */
+
+.section-work {
+    background-color: #f1f1f1;
+}
+
+.section-work p {
+    font-size: 20px;
+    max-width: 950px;
+}
+
+.section-work .nav-pills {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.section-work .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #484848;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    transition: all .5s;
+}
+
+.gallery a:hover img {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+/* Остальные стили для табов лежат в section watch */
+
+
+/* *********************** section-reviews *********************** */
+
+.section-reviews {
+    background: url(../img/quote-bg.png) center no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 0;
+
+}
+
+
+
+.section-reviews .carousel-caption {
+    top: 5%;
+    bottom: auto;
+    text-align: left;
+}
+
+.section-reviews .blockquote {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 70px;
+
+}
+
+.section-reviews .blockquote::after {
+    content: '\201C';
+    position: absolute;
+    color: #f42267;
+    top: -85px;
+    left: -35px;
+    font-size: 170px;
+    font-weight: 300;
+}
+
+.section-reviews .blockquote-footer {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.section-reviews .slogan {
+    font-size: 41px;
+}
+
+.section-reviews h3 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+/* *********************** SECTION FORM *********************** */
+
+.section-form {
+    background: url(../img/form-bg.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-form h3 {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.section-form .slogan {
+    font-size: 26px;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-form p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.section-form form {
+    margin-top: 50px;
+}
+
+.section-form .form-control {
+    height: 52px;
+    background-color: rgba(255, 255, 255, .35);
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    padding: 0 40px;
+    margin-bottom: 20px;
+}
+
+.section-form .form-control::placeholder {
+    color: #fff;
+}
+
+.section-form .form-control:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+/* *********************** FOOTER *********************** */
+
+.footer {
+    background: url(../img/world-map.png) center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h3 {
+    color: #4b2d7f;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer ul {
+    padding-left: 10px;
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 70px;
+}
+
+.footer a {
+    color: #171717;
+}
+
+.footer-images img {
+    margin-bottom: 25px;
+}
+
+
+/* *********************** COPYRIGHT *********************** */
+
+.copyright {
+    background-color: #f6f6f6;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.copyright a,
+.copyright span {
+    color: #171717;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright a::after {
+    content: '\00B7';
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+.copyright span::after {
+    content: '\00B7';
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+.copyright li:last-child a::after {
+    content: '';
+}
+
+.copyright .nav {
+    max-width: 710px;
+    margin: 0 auto;
+}
+
+/* ****************** SECTION CONTENT ****************** */
+
+.section-content {
+    padding: 40px 0;
+}
+
+.article-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    /* padding-bottom: 40px; */
+    transition: all .4s;
+    margin-bottom: 30px;
+    min-height: 280px;
+}
+
+.article-preview:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+.article-preview h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.article-preview a {
+    color: #484848;
+    transition: all .4s;
+
+}
+
+.article-preview a:hover {
+    color: #f42267;
+    text-decoration: none;
+}
+
+.article-date {
+    color: #da1757;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.thumb {
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin: 0 20px 0 0;
+    float: left;
+}
+
+.article-preview .more {
+    color: #da1757;
+}
+
+.article-preview .more:hover {
+    text-decoration: underline;
+}
+
+.widget-categories ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.widget-categories li::before {
+    content: '\f138';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #da1757;
+    font-size: 14px;
+}
+
+.widget-categories a {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all .4s;
+}
+
+.widget-categories a:hover {
+    color: #da1757;
+}
+
+.widget-title {
+    color: #484848;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.widget-title::after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 30px;
+    background-color: #da1757;
+}
+
+/* ********************** Pagination ********************** */
+
+
+.page-link {
+    color: #da1757;
+    transition: all .4s;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.page-link:hover {
+    background-color: #da1757;
+    color: #fff;
+    border-color: #f42267;
+}
+
+.page-item.active .page-link {
+    background-color: #da1757;
+    border-color: #da1757;
+}
+
+
+
+
+
+
+/* *********************** Media queries *********************** */
+
+@media only screen and (max-width: 1366px) {
+    .main-header-text {
+        background: rgba(0, 0, 0, .3);
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .footer ul {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    section,
+    .footer {
+        padding: 50px 0;
+    }
+
+    .main-header .navbar-nav {
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
+        padding: 10px 0;
+    }
+
+    .main-header-text {
+        max-width: 600px;
+    }
+
+    .main-header-text .slogan {
+        font-size: 36px;
+    }
+
+    .main-header-text h1 {
+        font-size: 48px;
+    }
+
+    .main-header-text p {
+        font-size: 21px;
+        max-width: 530px;
+    }
+
+    .progress-item .num {
+        font-size: 46px;
+    }
+
+    .progress-item i {
+        font-size: 60px;
+    }
+
+    .section-reviews .slogan {
+        font-size: 26px;
+    }
+
+    .section-reviews h3 {
+        font-size: 36px;
+    }
+
+    .section-reviews .blockquote {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .section-reviews .blockquote::after {
+        top: -45px;
+        left: -10px;
+        font-size: 100px;
+    }
+
+    .section-reviews .blockquote-footer {
+        font-size: 16px;
+    }
+
+    .footer-images {
+        margin-top: 40px;
+    }
+
+    .copyright {
+        padding: 25px 0;
+    }
+
+    .copyright a,
+    .copyright span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header .navbar-brand {
+        font-size: 36px;
+    }
+
+    .main-header-text {
+        left: 0;
+        margin: 0 40px;
+        max-width: 90%;
+    }
+
+    .progress-item {
+        padding: 30px 10px;
+        transition: all .5s;
+    }
+
+    .progress-item .num {
+        font-size: 44px;
+        margin: 25px 0 10px 0;
+    }
+
+    .progress-item i {
+        font-size: 55px;
+    }
+
+    .section-reviews .blockquote {
+        margin-top: 30px;
+    }
+
+    .section-reviews .carousel-caption {
+        padding: 0;
+    }
+
+    .section-form h3 {
+        font-size: 38px;
+    }
+
+    .section-form .slogan {
+        font-size: 22px;
+    }
+
+    .section-form p {
+        font-size: 16px;
+    }
+
+    .section-form form {
+        margin-top: 40px;
+    }
+
+    .widget-title {
+        margin-top: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 680px) {
+    .main-header .navbar-brand {
+        font-size: 32px;
+    }
+
+    .main-header-text {
+        top: 110px;
+        margin: 0 20px;
+        max-width: 100%;
+    }
+
+    .main-header-text .slogan,
+    .section-watch .slogan,
+    .section-lets .slogan,
+    .section-design .slogan {
+        font-size: 28px;
+    }
+
+    .main-header-text h1 {
+        font-size: 40px;
+    }
+
+    .section-watch h2,
+    .section-lets h2,
+    .section-design h2,
+    .section-work h2 {
+        font-size: 36px;
+    }
+
+    .section-work p {
+        font-size: 18px;
+    }
+
+    .main-header-text p {
+        font-size: 18px;
+        max-width: 530px;
+    }
+
+    .main-header-buttons {
+        padding-right: 40px;
+    }
+
+    .main-header-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .section-lets p {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .section-reviews .carousel-caption {
+        position: static;
+        width: 70%;
+        margin: auto;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .section-work .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .thumb {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .main-header-buttons {
+        padding: 0 30px;
+    }
+
+    .main-header-text .slogan {
+        font-size: 24px;
+    }
+
+    .main-header-text h1 {
+        font-size: 32px;
+    }
+
+    .main-header-text p {
+        font-size: 16px;
+    }
+
+    .section-watch .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-watch .nav-link {
+        margin-bottom: 10px;
+        padding: 8px 16px;
+    }
+
+    .read-more-btn {
+        padding: 8px 16px;
+    }
+
+    .section-reviews .carousel-caption {
+        padding: 20px 0;
+    }
+
+    .section-reviews .slogan {
+        font-size: 22px;
+    }
+
+    .section-reviews h3 {
+        font-size: 30px;
+    }
+
+    .section-reviews .blockquote {
+        font-size: 14px;
+    }
+
+    .section-reviews .blockquote-footer {
+        font-size: 14px;
+    }
+
+    .footer-images {
+        margin-top: 0;
+    }
+
+    .footer {
+        padding-bottom: 0;
+    }
+
+    .copyright a,
+    .copyright span {
+        font-size: 12px;
+    }
+
+   
+}
